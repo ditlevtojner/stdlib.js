@@ -1,0 +1,33 @@
+{
+  "name": "stdlib.js",
+  "version": "0.0.1",
+  "description": "The stdlib.js defines a series of helpers, that makes writing es6 even more delightfull",
+  "main": "./source/stdlib.js",
+  "stdlib_extensions": [
+    "Type"
+  ],
+  "scripts": {
+    "build": "node ./node_modules/.bin/webpack",
+    "naive-test-node": "node ./tests/node/naive.js",
+    "naive-test-browser": "node ./tests/browser/naive.js",
+    "test": "npm run naive-test-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "stdlib.js"
+  },
+  "keywords": [
+    "stdlib",
+    "helpers"
+  ],
+  "author": "Ditlev Tøjner, Jepser Devantier",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "find-root": "^1.1.0",
+    "path-is-inside": "^1.0.2",
+    "webpack": "^3.6.0"
+  }
+}
