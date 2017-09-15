@@ -7,7 +7,8 @@
     "Type"
   ],
   "scripts": {
-    "build": "node ./node_modules/.bin/webpack",
+    "build-node": "TARGET='node' node ./node_modules/.bin/webpack",
+    "build-web": "TARGET='web' node ./node_modules/.bin/webpack",
     "naive-test-node": "node ./tests/node/naive.js",
     "naive-test-browser": "node ./tests/browser/naive.js",
     "test": "npm run naive-test-node"
